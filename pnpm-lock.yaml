@@ -307,6 +307,43 @@ importers:
         specifier: ^3.25.76
         version: 3.25.76
 
+  client-sdks/react:
+    dependencies:
+      '@mastra/client-js':
+        specifier: workspace:*
+        version: link:../client-js
+      '@tanstack/react-query':
+        specifier: ^5.81.5
+        version: 5.81.5(react@19.1.1)
+      react:
+        specifier: ^19.1.1
+        version: 19.1.1
+      react-dom:
+        specifier: ^19.1.1
+        version: 19.1.1(react@19.1.1)
+    devDependencies:
+      '@mastra/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      '@types/json-schema':
+        specifier: ^7.0.15
+        version: 7.0.15
+      '@types/react':
+        specifier: ^19.1.9
+        version: 19.1.9
+      '@types/react-dom':
+        specifier: ^19.1.7
+        version: 19.1.7(@types/react@19.1.9)
+      eslint:
+        specifier: ^9.35.0
+        version: 9.35.0(jiti@2.4.2)
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
+      zod:
+        specifier: ^3.25.76
+        version: 3.25.76
+
   deployers/cloud:
     dependencies:
       '@mastra/core':
